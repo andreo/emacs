@@ -1,0 +1,9 @@
+# emacs
+auto-save-list
+session.*
+tramp
+el-get
+
+# elisp
+*.elc
+*~
