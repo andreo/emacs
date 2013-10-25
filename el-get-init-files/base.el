@@ -1,4 +1,11 @@
 
+(setq delete-by-moving-to-trash t)
+
+;; ignore case
+(setq read-file-name-completion-ignore-case t)
+(setq read-buffer-completion-ignore-case t)
+(setq completion-ignore-case t)
+
 (global-set-key (kbd "\e\ef") 'find-dired)
 (global-set-key (kbd "\e\eg") 'rgrep)
 ;; (global-set-key (kbd "<f9>") 'next-error)
@@ -40,12 +47,11 @@
 ;; showing trailing whitespace
 (setq show-trailing-whitespace t)
 
-;; ignore case
-(setq read-file-name-completion-ignore-case t)
+(show-paren-mode)
 
-;;
 ;;(global-set-key "\r" 'newline-and-indent)
 
+(global-set-key (kbd "C-x q") 'wdired-change-to-wdired-mode)
 (add-hook 'dired-mode-hook
           '(lambda ()
              (local-set-key "\C-xq" 'wdired-change-to-wdired-mode)))

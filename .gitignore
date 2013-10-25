@@ -7,3 +7,5 @@ el-get
 # elisp
 *.elc
 *~
+
+.DS_Store

@@ -5,7 +5,8 @@
 
 (setq fileman-mapping
       (list 'windows-nt "explorer.exe"
-	    'gnu/linux "/usr/bin/nautilus"))
+	    'gnu/linux "/usr/bin/nautilus"
+            'darwin "open"))
 
 (defun fileman-open-current-directory ()
   (interactive)
