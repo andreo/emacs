@@ -14,8 +14,8 @@
     (eval-print-last-sexp)))
 
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
-(el-get 'sync)
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
+(el-get 'sync)
 
 (load-file "~/.emacs.d/el-get-init-files/base.el")
 
