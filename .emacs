@@ -20,7 +20,8 @@
 (dolist (package '(multiple-cursors
                    ace-isearch
                    expand-region
-                   undo-tree))
+                   undo-tree
+                   grep-ed))
   (unless (string= "installed" (el-get-read-package-status package))
     (el-get-install package)))
 
