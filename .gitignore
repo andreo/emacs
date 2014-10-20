@@ -17,3 +17,5 @@ srecode-map.el
 
 .DS_Store
 init-google
+.mc-lists.el
+eshell
