@@ -56,6 +56,10 @@
           '(lambda ()
              (local-set-key (kbd "C-c C-e") 'wdired-change-to-wdired-mode)))
 
+(add-hook 'emacs-lisp-mode-hook
+          '(lambda ()
+             (local-set-key (kbd "C-c v") 'eval-buffer)))
+
 (dolist (name '("cedet.el"
                 "fileman.el"
                 "ido.el"))
