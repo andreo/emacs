@@ -1,5 +1,6 @@
 
 (setq delete-by-moving-to-trash t)
+(setq x-select-enable-clipboard t)
 
 ;; ignore case
 (setq read-file-name-completion-ignore-case t)
