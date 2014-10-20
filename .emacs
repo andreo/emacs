@@ -17,6 +17,14 @@
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
 (el-get 'sync)
 
+(dolist (package '(multiple-cursors
+                   ace-isearch
+                   expand-region
+                   undo-tree))
+  (unless (string= "installed" (el-get-read-package-status package))
+    (el-get-install package)))
+
 (load-file "~/.emacs.d/el-get-init-files/base.el")
 
 (server-start)
+
