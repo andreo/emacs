@@ -56,5 +56,7 @@
           '(lambda ()
              (local-set-key "\C-xq" 'wdired-change-to-wdired-mode)))
 
-(dolist (name '("cedet.el" "fileman.el" "ido.el"))
+(dolist (name '("cedet.el"
+                "fileman.el"
+                "ido.el"))
   (load-file (concat "~/.emacs.d/el-get-init-files/" name)))
