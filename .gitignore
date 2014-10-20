@@ -3,12 +3,17 @@ auto-save-list
 session.*
 tramp
 el-get
+semanticdb
+bookmarks
+url
+elpa
+ac-comphist.dat
+ede-projects.el
+srecode-map.el
 
 # elisp
 *.elc
 *~
 
 .DS_Store
-
-semanticdb
-elpa
+init-google
