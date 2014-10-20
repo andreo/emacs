@@ -52,10 +52,9 @@
 
 ;;(global-set-key "\r" 'newline-and-indent)
 
-(global-set-key (kbd "C-x q") 'wdired-change-to-wdired-mode)
 (add-hook 'dired-mode-hook
           '(lambda ()
-             (local-set-key "\C-xq" 'wdired-change-to-wdired-mode)))
+             (local-set-key (kbd "C-c C-e") 'wdired-change-to-wdired-mode)))
 
 (dolist (name '("cedet.el"
                 "fileman.el"
