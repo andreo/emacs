@@ -18,3 +18,5 @@
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
 
 (load-file "~/.emacs.d/el-get-init-files/base.el")
+
+(server-start)
