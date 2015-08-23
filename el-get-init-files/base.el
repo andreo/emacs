@@ -64,3 +64,9 @@
                 "fileman.el"
                 "ido.el"))
   (load-file (concat "~/.emacs.d/el-get-init-files/" name)))
+
+(defun setup-js-mode ()
+  (setq js-indent-level 2)
+  (setq tab-width 2))
+
+(add-hook 'js-mode-hook 'setup-js-mode)
