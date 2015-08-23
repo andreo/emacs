@@ -21,7 +21,10 @@
                    ace-isearch
                    expand-region
                    undo-tree
-                   grep-ed))
+                   grep-ed
+                   go-mode
+                   yaml-mode
+                   dockerfile-mode))
   (unless (string= "installed" (el-get-read-package-status package))
     (el-get-install package)))
 
