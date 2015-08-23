@@ -24,7 +24,8 @@
                    grep-ed
                    go-mode
                    yaml-mode
-                   dockerfile-mode))
+                   dockerfile-mode
+                   jade-mode))
   (unless (string= "installed" (el-get-read-package-status package))
     (el-get-install package)))
 
