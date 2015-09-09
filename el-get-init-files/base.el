@@ -70,3 +70,9 @@
   (setq tab-width 2))
 
 (add-hook 'js-mode-hook 'setup-js-mode)
+
+;; nodejs
+(pushnew
+ '(nodejs "\\(node_modules/.+\\):\\([0-9]+\\):\\([0-9]+\\)" 1 2 3)
+ compilation-error-regexp-alist-alist)
+(pushnew 'nodejs compilation-error-regexp-alist)
