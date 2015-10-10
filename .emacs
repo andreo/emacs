@@ -1,9 +1,3 @@
-(require 'package)
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")
-                         ("marmalage" . "http://marmalade-repo.org/packages/")))
-(package-initialize)
-
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (unless (require 'el-get nil 'noerror)
@@ -25,9 +19,17 @@
                    go-mode
                    yaml-mode
                    dockerfile-mode
-                   jade-mode))
+                   jade-mode
+                   json-mode
+                   markdown-mode))
   (unless (string= "installed" (el-get-read-package-status package))
     (el-get-install package)))
+
+(require 'package)
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("melpa" . "http://melpa.milkbox.net/packages/")
+                         ("marmalage" . "http://marmalade-repo.org/packages/")))
+(package-initialize)
 
 (load-file "~/.emacs.d/el-get-init-files/base.el")
 
