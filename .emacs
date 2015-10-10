@@ -16,12 +16,27 @@
                    expand-region
                    undo-tree
                    grep-ed
-                   go-mode
                    yaml-mode
                    dockerfile-mode
                    jade-mode
                    json-mode
-                   markdown-mode))
+                   markdown-mode
+
+                   ;; go
+                   go-autocomplete
+                   go-company
+                   go-def
+                   go-eldoc
+                   go-errcheck
+                   go-flymake
+                   go-imports
+                   go-lint
+                   go-mode
+                   go-projectile
+                   go-rename
+                   go-test
+                   go-to-char
+                   ))
   (unless (string= "installed" (el-get-read-package-status package))
     (el-get-install package)))
 
