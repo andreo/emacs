@@ -1,5 +1,6 @@
 
 (setq delete-by-moving-to-trash t)
+(setq trash-directory "~/.Trash")
 (setq x-select-enable-clipboard t)
 
 ;; ignore case
@@ -79,3 +80,6 @@
 
 ;; disable annoying visible bell
 (setq visible-bell nil)
+
+(require 'dtrt-indent)
+(dtrt-indent-mode 1)

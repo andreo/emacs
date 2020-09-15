@@ -21,6 +21,8 @@
                    jade-mode
                    json-mode
                    markdown-mode
+                   ztree
+                   dtrt-indent ;; detect tab indentation
 
                    ;; go
                    go-autocomplete
